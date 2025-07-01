@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Dream Snatch</title>
+<link rel="stylesheet" href="https://unpkg.com/cropperjs/dist/cropper.min.css" />
+<style>
+  body { margin: 20px; font-family: sans-serif; background: #f0f0f0; }
+  #canvas-container { position: relative; display: inline-block; }
+  canvas { max-width: 100%; border-radius: var(--radius, 0px); box-shadow: var(--shadow, none); }
+  #controls { margin-top: 10px; }
+</style>
+</head>
+<body>
+<h1>Dream Snatch</h1>
+<div id="canvas-container"><canvas id="screenshot"></canvas></div>
+<div id="controls">
+  <label>Border radius: <input type="range" id="radius" min="0" max="50" value="0"></label>
+  <label>Shadow: <input type="checkbox" id="shadow"></label>
+  <label>Background: <input type="color" id="bgColor" value="#ffffff"></label>
+  <button id="download">Download</button>
+</div>
+<script src="https://unpkg.com/cropperjs/dist/cropper.min.js"></script>
+<script src="renderer.js"></script>
+</body>
+</html>

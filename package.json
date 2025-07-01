@@ -1,0 +1,12 @@
+{
+  "name": "dream-snatch",
+  "version": "1.0.0",
+  "main": "main.js",
+  "description": "A simple screenshot tool built with Electron.",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^29.0.0"
+  }
+}
